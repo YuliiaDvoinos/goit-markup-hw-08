@@ -36,9 +36,63 @@ img {
   display: block;
 }
 
+@media screen and (min-width: 480px) {
+  .tasks-section {
+    display: none;
+  }
+}
+
 .container {
-  width: 1200px;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section {
   margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .section {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .section {
+    width: 1600px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
