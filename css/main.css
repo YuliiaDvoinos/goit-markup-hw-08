@@ -40,11 +40,34 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header__menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border: transparent;
+}
+
+.header__menu-btn.is-open .header__menu-btn--cloze {
+  display: block;
+}
+
+.header__menu-btn.is-open .header__menu-btn--menu {
+  display: none;
+}
+
+.header__btn-svg {
+  fill: #212121;
+}
+
+.header__btn-svg--cloze {
+  display: none;
 }
 
 @media screen and (min-width: 480px) {
@@ -111,8 +134,9 @@ img {
   color: #212121;
   font-family: Raleway, sans-serif;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .logo__part {

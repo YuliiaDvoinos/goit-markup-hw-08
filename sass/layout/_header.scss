@@ -3,9 +3,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   &__menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
     background-color: transparent;
     border: transparent;
+  }
+  &__menu-btn.is-open &__menu-btn--cloze {
+    display: block;
+  }
+  &__menu-btn.is-open &__menu-btn--menu {
+    display: none;
+  }
+
+  &__btn-svg {
+    fill: $svg-modal;
+
+    &--cloze {
+      display: none;
+    }
   }
 }

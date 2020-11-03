@@ -22,10 +22,11 @@
         <nav class="header__nav">
           <a href="index.html" lang="en" class="link-underline logo"><span class="logo__part">Web</span>Studio</a>
 
-          <button type="button" class="header__menu-btn">
-            <svg class=""  width="40px" height="40px">
-              <use href="./images/svg/optimized.svg#icon-cloze"></use>
-              <use href="./images/svg/optimized.svg#icon-menu"></use>
+          <button type="button" class="header__menu-btn is-open" aria-expanded="false"
+            aria-controls="menu-container"  data-menu-button>
+            <svg class="header__btn-svg"  width="25px" height="25px" aria-label="Переключатель мобильного меню">
+              <use class="header__btn-svg--cloze" href="./images/svg/optimized.svg#icon-modal-cloze"></use>
+              <use class="header__btn-svg--menu" href="./images/svg/optimized.svg#icon-menu"></use>
             </svg>
           </button>
           <!--
@@ -564,5 +565,6 @@
     <!--script-->
 
     <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
