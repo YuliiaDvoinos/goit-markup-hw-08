@@ -36,6 +36,17 @@ img {
   display: block;
 }
 
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu-btn {
+  background-color: transparent;
+  border: transparent;
+}
+
 @media screen and (min-width: 480px) {
   .tasks-section {
     display: none;
@@ -94,5 +105,17 @@ img {
   .section {
     width: 1600px;
   }
+}
+
+.logo {
+  color: #212121;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo__part {
+  color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

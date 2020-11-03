@@ -1,0 +1,11 @@
+.header {
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__menu-btn {
+    background-color: transparent;
+    border: transparent;
+  }
+}
