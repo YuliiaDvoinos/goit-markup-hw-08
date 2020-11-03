@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: var(--main-titles-color);
+  background-color: var(--background-main);
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+.link-underline {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
