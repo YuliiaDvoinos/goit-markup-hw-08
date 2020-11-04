@@ -1,0 +1,79 @@
+.footer {
+  background-color: $dark-background;
+
+  .container {
+    text-align: center;
+  }
+
+  //footer nav
+  &__address {
+    margin-top: 20px;
+
+    &-item:not(:first-child) {
+      margin-top: 8px;
+    }
+
+    &-location {
+      color: $third-title-color;
+
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    &-contact {
+      color: $address;
+
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  }
+  //foter socials
+
+  &__socials-capture {
+    margin-top: 60px;
+
+    color: $third-title-color;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    &-item:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    &-link:hover,
+    &-link:focus {
+      background-color: $interactive-elements;
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &-svg {
+      fill: $svg-main;
+    }
+  }
+
+  //footer form
+
+  @import "../components/footer-form";
+}

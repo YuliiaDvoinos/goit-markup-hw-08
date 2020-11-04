@@ -11,4 +11,7 @@
   &__part {
     color: $interactive-elements;
   }
+  &--dark-theme {
+    color: $third-title-color;
+  }
 }
