@@ -50,6 +50,7 @@
     font-size: 16px;
     line-height: 1.2;
   }
+  //team socials
 
   &__socials {
     display: flex;
@@ -71,7 +72,8 @@
       border-radius: 50%;
       background-color: $background-main;
     }
-    &-link:hover {
+    &-link:hover,
+    &-link:focus {
       background-color: $interactive-elements;
       transition-property: background-color;
       transition-duration: 250ms;
@@ -81,7 +83,8 @@
     &-svg {
       fill: $svg-main;
     }
-    &-link:hover &-svg {
+    &-link:hover &-svg,
+    &-link:focus &-svg {
       fill: $svg-secondary;
       transition-property: fill;
       transition-duration: 250ms;

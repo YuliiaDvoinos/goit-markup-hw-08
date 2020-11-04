@@ -372,7 +372,7 @@ img {
   background-color: #ffffff;
 }
 
-.team-section__socials-link:hover {
+.team-section__socials-link:hover, .team-section__socials-link:focus {
   background-color: #2196f3;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -383,7 +383,8 @@ img {
   fill: #afb1b8;
 }
 
-.team-section__socials-link:hover .team-section__socials-svg {
+.team-section__socials-link:hover .team-section__socials-svg,
+.team-section__socials-link:focus .team-section__socials-svg {
   fill: #ffffff;
   transition-property: fill;
   transition-duration: 250ms;
