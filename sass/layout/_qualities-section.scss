@@ -1,0 +1,63 @@
+//MOBILE STYLES
+.qualities-section {
+  background-color: $background-main;
+
+  .container {
+    padding: 60px 15px;
+  }
+
+  &__item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  &__item::before {
+    content: "";
+    display: block;
+
+    height: 120px;
+    background-color: $grey-background;
+    margin-bottom: 30px;
+  }
+  .antenna::before {
+    background-image: url(../../images/svg/qualities/antenna.svg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .clock::before {
+    background-image: url(../../images/svg/qualities/clock.svg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .diagram::before {
+    background-image: url(../../images/svg/qualities/diagram.svg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .astronaut::before {
+    background-image: url(../../images/svg/qualities/astronaut.svg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__caption {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $main-titles-color;
+  }
+  &__description {
+    margin-top: 10px;
+
+    color: $secondary-titles-color;
+
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}

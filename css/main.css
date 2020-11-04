@@ -233,6 +233,67 @@ img {
   margin-top: 30px;
 }
 
+.qualities-section {
+  background-color: #ffffff;
+}
+
+.qualities-section .container {
+  padding: 60px 15px;
+}
+
+.qualities-section__item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.qualities-section__item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.qualities-section .antenna::before {
+  background-image: url(../../images/svg/qualities/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.qualities-section .clock::before {
+  background-image: url(../../images/svg/qualities/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.qualities-section .diagram::before {
+  background-image: url(../../images/svg/qualities/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.qualities-section .astronaut::before {
+  background-image: url(../../images/svg/qualities/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.qualities-section__caption {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.qualities-section__description {
+  margin-top: 10px;
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 @media screen and (min-width: 480px) {
   .tasks-section {
     display: none;
