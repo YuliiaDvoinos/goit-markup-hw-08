@@ -1,8 +1,10 @@
+@import "../components/footer-form";
 .footer {
   background-color: $dark-background;
 
   .container {
     text-align: center;
+    padding: 60px 15px;
   }
 
   //footer nav
@@ -74,6 +76,4 @@
   }
 
   //footer form
-
-  @import "../components/footer-form";
 }
