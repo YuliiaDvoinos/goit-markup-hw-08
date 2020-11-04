@@ -1,0 +1,68 @@
+.main-section {
+  background-color: $dark-background;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../images/main-section/mobile/main-section-mobile.jpg");
+  background-size: contain;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/main-section/mobile/main-section-mobile@2x.jpg");
+    }
+  }
+
+  .container {
+    padding: 118px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $third-title-color;
+
+    font-weight: 900;
+
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  //BUTTON
+
+  &__button {
+    background-color: $interactive-elements;
+    color: $third-title-color;
+    cursor: pointer;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    min-width: 200px;
+    height: 50px;
+
+    text-align: center;
+    display: block;
+
+    padding: 10px 32px;
+    margin-top: 30px;
+  }
+}
