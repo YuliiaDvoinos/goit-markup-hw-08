@@ -256,25 +256,25 @@ img {
 }
 
 .qualities-section .antenna::before {
-  background-image: url(../../images/svg/qualities/antenna.svg);
+  background-image: url(..//images/svg/qualities/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .qualities-section .clock::before {
-  background-image: url(../../images/svg/qualities/clock.svg);
+  background-image: url(..//images/svg/qualities/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .qualities-section .diagram::before {
-  background-image: url(../../images/svg/qualities/diagram.svg);
+  background-image: url(..//images/svg/qualities/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .qualities-section .astronaut::before {
-  background-image: url(../../images/svg/qualities/astronaut.svg);
+  background-image: url(..//images/svg/qualities/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
