@@ -1,0 +1,91 @@
+.team-section {
+  background-color: $grey-background;
+
+  .container {
+    padding: 60px 15px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $main-titles-color;
+  }
+  &__team-pic {
+    display: block;
+    width: 450px;
+    height: 460px;
+  }
+
+  &__team-item {
+    margin-top: 30px;
+    padding-bottom: 24px;
+    background-color: $background-main;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+      0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+  }
+  &__worker-name {
+    text-align: center;
+
+    margin-top: 30px;
+
+    color: $main-titles-color;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  &__position {
+    text-align: center;
+
+    margin-top: 10px;
+
+    color: $secondary-titles-color;
+
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 16px;
+
+    &-item:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: $background-main;
+    }
+    &-link:hover {
+      background-color: $interactive-elements;
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-svg {
+      fill: $svg-main;
+    }
+    &-link:hover &-svg {
+      fill: $svg-secondary;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
