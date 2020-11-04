@@ -453,7 +453,10 @@ img {
   fill: #afb1b8;
 }
 
-.footer-form .input-wrapper,
+.footer-form .input-wrapper {
+  margin-top: 60px;
+}
+
 .footer-form .button-wrapper {
   margin-top: 20px;
 }
