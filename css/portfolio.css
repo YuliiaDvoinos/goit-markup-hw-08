@@ -185,12 +185,6 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .tasks-section {
-    display: none;
-  }
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -257,4 +251,4 @@ img {
 .logo__part {
   color: #2196f3;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=portfolio.css.map */
