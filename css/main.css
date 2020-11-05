@@ -863,7 +863,7 @@ img {
   align-self: center;
   width: 24px;
   height: 24px;
-  background-image: url(../../images/svg/subscribe.svg);
+  background-image: url(..//images/svg/subscribe.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
