@@ -698,7 +698,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -732,6 +731,7 @@ img {
   }
   .partners-section__partners-item {
     margin-top: 30px;
+    width: calc(50% - 30px);
   }
   .partners-section__partners-item:nth-child(2n + 1) {
     margin-right: 30px;
