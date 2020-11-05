@@ -1,14 +1,5 @@
-//MOBILE STYLES
 .qualities-section {
   background-color: $background-main;
-
-  .container {
-    padding: 60px 15px;
-  }
-
-  &__item:not(:first-child) {
-    margin-top: 30px;
-  }
 
   &__item::before {
     content: "";
@@ -59,5 +50,59 @@
 
     font-size: 14px;
     line-height: 1.7;
+  }
+}
+//mobile
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .qualities-section {
+    .container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    &__item:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+}
+//tablet
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .qualities-section {
+    .container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item {
+      max-width: 354px;
+    }
+    &__item:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &__item:nth-child(n + 3) {
+      margin-top: 30px;
+    }
+    &__caption {
+      text-align: start;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .qualities-section {
+    .container {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+    &__list {
+      display: flex;
+    }
+    &__item {
+      min-width: 270px;
+    }
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }

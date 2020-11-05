@@ -1,40 +1,16 @@
 .main-section {
   background-color: $dark-background;
-  // MOBILE BG STYLES
-
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("..//images/main-section/mobile/main-section-mobile.jpg");
-  background-size: contain;
+    url(..//images/main-section/mobile/main-section-mobile.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (-o-min-device-pixel-ratio: 2/1),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    & {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url("..//images/main-section/mobile/main-section-mobile@2x.jpg");
-    }
-  }
-  //TABLET BG STYLES
-  //DESKTOP BG STYLES
-
-  .container {
-    padding: 118px 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin: 0 auto;
 
   &__title {
     color: $third-title-color;
@@ -47,7 +23,6 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
-
   //BUTTON
 
   &__button {
@@ -64,13 +39,62 @@
     border: 1px solid transparent;
     border-radius: 4px;
 
-    min-width: 200px;
-    height: 50px;
+    max-width: 200px;
+    min-height: 50px;
 
     text-align: center;
     display: block;
 
     padding: 10px 32px;
     margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .main-section {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("..//images/main-section/mobile/main-section-mobile@2x.jpg");
+  }
+}
+
+//tablet
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(..//images/main-section/tablet/main-section-tablet.jpg);
+  }
+}
+
+//desktop
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(..//images/main-section/desktop/main-section-desktop.jpg);
+    &__title {
+      font-size: 44px;
+      line-height: 1.4;
+    }
   }
 }

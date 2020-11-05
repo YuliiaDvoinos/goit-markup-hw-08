@@ -12,32 +12,54 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-<link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header-->
-    
+
     <header class="header section">
       <div class="container">
         <nav class="header__nav">
-          <a href="index.html" lang="en" class="link-underline logo"><span class="logo__part">Web</span>Studio</a>
+          <a href="index.html" lang="en" class="link-underline logo"
+            ><span class="logo__part">Web</span>Studio</a
+          >
 
-          <button type="button" class="header__menu-btn" 
+          <button
+            type="button"
+            class="header__menu-btn"
             aria-expanded="false"
             aria-controls="menu-container"
-            data-menu-button>
-            <svg class="header__btn-svg"  width="25px" height="25px" aria-label="Переключатель мобильного меню">
-              <use class="header__btn-cloze" href="./images/svg/optimized.svg#icon-modal-cloze"></use>
-              <use class="header__btn-menu" href="./images/svg/optimized.svg#icon-menu"></use>
+            data-menu-button
+          >
+            <svg
+              class="header__btn-svg"
+              width="25px"
+              height="25px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="header__btn-cloze"
+                href="./images/svg/optimized.svg#icon-modal-cloze"
+              ></use>
+              <use
+                class="header__btn-menu"
+                href="./images/svg/optimized.svg#icon-menu"
+              ></use>
             </svg>
           </button>
-          <div class="header__menu-container " id="menu-container" data-menu>
+          <div class="header__menu-container" id="menu-container" data-menu>
             <ul class="list header__nav-list">
-              <li class=" header__nav-item">
-                <a href="" class="link-underline header__nav-link header__nav-link--current">Студия</a>
+              <li class="header__nav-item">
+                <a
+                  href=""
+                  class="link-underline header__nav-link header__nav-link--current"
+                  >Студия</a
+                >
               </li>
               <li class="header__nav-item">
-                <a href="portfolio.html" class="link-underline header__nav-link ">Портфолио</a>
+                <a href="portfolio.html" class="link-underline header__nav-link"
+                  >Портфолио</a
+                >
               </li>
               <li class="header__nav-item">
                 <a href="" class="link-underline header__nav-link">Контакты</a>
@@ -47,48 +69,59 @@
             <address class="header__address">
               <ul class="list header__address-list">
                 <li class="header__address-item">
-                  <a href="mailto:info@devstudio.com" class="link-underline header__address-link">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="link-underline header__address-link"
+                  >
                     <svg class="header__address-svg" width="16px" height="12px">
-                      <use href="./images/svg/optimized.svg#icon-envelope"></use>
-                    </svg> info@devstudio.com</a>
+                      <use
+                        href="./images/svg/optimized.svg#icon-envelope"
+                      ></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
                 </li>
                 <li class="header__address-item">
-                  <a href="tel:+380961111111" class="link-underline header__address-link"> 
+                  <a
+                    href="tel:+380961111111"
+                    class="link-underline header__address-link"
+                  >
                     <svg class="header__address-svg" width="10px" height="16px">
-                      <use href="./images/svg/optimized.svg#icon-smartphone"></use>
-                    </svg> +38 096 111 11 11</a>
+                      <use
+                        href="./images/svg/optimized.svg#icon-smartphone"
+                      ></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
-
           </div>
-          
         </nav>
-       
       </div>
     </header>
-    
+
     <!-- main-->
     <main>
       <!-- ======section with button =========-->
-      
-      
-        <section class="section main-section">
+
+      <section class="section main-section">
         <div class="container">
           <h1 class="main-section__title">
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="main-section__button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="main-section__button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
-      
-     
 
       <!-- ===========section our qualities =============-->
+
       
-     
-        <section class="section qualities-section">
+
+          <section class="section qualities-section">
         <div class="container">
           <h2  class="visually-hidden">our qualities</h2>
           <ul class="list qualities-section__list">
@@ -124,23 +157,23 @@
         </div>
       </section>
      
-      
+        
 
       <!-- ============our tasks ==============-->
 
       
-      
-        <section class="section tasks-section">
+
+         <section class="section tasks-section">
         <div class="container">
           <h2 class="tasks-section__title">Чем мы занимаемся</h2>
           <ul class="list tasks-section__list">
             <li class="tasks-section__item">
               <picture>
                 <source srcset="./images/tasks-sections/desktop/desktop-tasks.webp 1x, ./images/tasks-sections/desktop/desktop-tasks@2x.webp 2x "
-                        media="{min-width: 1600px}"
+                        media="(min-width: 1600px)"
                         type="image/webp">
                 <source srcset="./images/tasks-sections/desktop/desktop-tasks.jpg 1x, ./images/tasks-sections/desktop/desktop-tasks@2x.jpg 2x"
-                        media="{min-width: 1600px}">
+                        media="(min-width: 1600px)">
 
                 <img
                         src="./images/tasks-sections/desktop/desktop-tasks.jpg"
@@ -148,15 +181,18 @@
 
                 />
               </picture>
+              <div class="tasks-section__overlay">
+                <p class="tasks-section__overlay-description">Десктопные приложения</p>
+              </div>
 
             </li>
             <li class="tasks-section__item">
               <picture>
                 <source srcset="./images/tasks-sections/desktop/mobile-tasks.webp 1x, ./images/tasks-sections/desktop/desktop-tasks@2x.webp 2x"
-                        media="{min-width: 1600px}"
+                        media="(min-width: 1600px)"
                         type="image/webp">
                 <source srcset="./images/tasks-sections/desktop/mobile-tasks.jpg 1x, ./images/tasks-sections/desktop/mobile-tasks@2x.jpg 2x"
-                        media="{min-width: 1600px}">
+                        media="(min-width: 1600px)">
 
                 <img
                         src="./images/tasks-sections/desktop/mobile-tasks.jpg"
@@ -164,13 +200,16 @@
 
                 />
               </picture>
+              <div class="tasks-section__overlay">
+                <p class="tasks-section__overlay-description">Мобильные приложения</p>
+              </div>
             </li>
             <li class="tasks-section__item">
               <picture>
                 <source srcset="./images/tasks-sections/desktop/design-tasks.webp 1x, ./images/tasks-sections/desktop/design-tasks@2x.webp 2x"
-                        media="{min-width: 1600px}" type="image/webp">
+                        media="(min-width: 1600px)" type="image/webp">
                 <source srcset="./images/tasks-sections/desktop/design-tasks.jpg 1x, ./images/tasks-sections/desktop/design-tasks@2x.jpg 2x"
-                        media="{min-width: 1600px}">
+                        media="(min-width: 1600px)">
 
                 <img
                         src="./images/tasks-sections/desktop/design-tasks.jpg"
@@ -178,18 +217,19 @@
 
                 />
               </picture>
+              <div class="tasks-section__overlay">
+                <p class="tasks-section__overlay-description">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      
-      
+       
 
       <!-- =========section our team ==========-->
 
       
-       
-          <section class="section team-section">
+            <section class="section team-section">
         <div class="container">
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="list team-section__team">
@@ -418,13 +458,13 @@
       </section>
        
       
+         
 
       <!--      partners  section      -->
 
+      
 
-
-
-  <section class="section partners-section">
+   <section class="section partners-section">
   <div class="container">
     <h2 class="partners-section__title">Постоянные клиенты</h2>
     <ul class="list partners-section__partners">
@@ -473,18 +513,20 @@
     </ul>
   </div>
 </section>
-    </main>
 
+    </main>
 
     <!--=======footer=========-->
 
     
-     <footer class="section footer">
+       <footer class="section footer">
 
       <div class="container">
-        <!-- address container-->
+     
+    <!-- address container-->
 
-       <div class="footer__address-container">
+    
+         <div class="footer__address-container">
 
           <a href="index.html" lang="en" class="link-underline logo logo--dark-theme"><span class="logo__part">Web</span>Studio</a>
 
@@ -503,11 +545,12 @@
             </ul>
           </address>
                  </div>
+       
 
-                <!--footer socials-->
+    <!--footer socials-->
 
-
-       <div class="footer__socials-container">
+    
+         <div class="footer__socials-container">
          <p class="footer__socials-capture">ПРИСОЕДИНЯЙТЕСЬ</p>
          <ul class="list footer__socials">
            <li class="footer__socials-item">
@@ -536,8 +579,10 @@
             </li>
          </ul>
        </div>
-        <!--footer form-->
-        <div class="footer-form">
+       
+    <!--footer form-->
+    
+          <div class="footer-form">
           <form action="#" method="GET" class="subscribe-form">
             <div class="input-wrapper">
               <label for="subscriber-mail" class="form-label">Подпишитесь на рассылку</label>
@@ -549,12 +594,13 @@
           </form>
         </div>
         </div>
-      </div>
+      
 
       
     </footer>
-     
-<!--
+        
+
+    <!--
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-container">
         <div class="modal">
