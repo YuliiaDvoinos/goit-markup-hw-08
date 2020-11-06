@@ -105,6 +105,8 @@ img {
   }
   .header__menu-container.is-open {
     display: block;
+    opacity: 1;
+    z-index: 2;
   }
   .header__nav-item:not(:first-child) {
     margin-top: 40px;
@@ -432,6 +434,7 @@ img {
 .portfolio-main__gallery-item:focus .portfolio-main__gallery-card-overlay {
   transform: translateY(0);
   opacity: 1;
+  z-index: 1;
   pointer-events: auto;
 }
 

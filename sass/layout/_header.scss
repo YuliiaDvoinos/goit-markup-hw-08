@@ -81,6 +81,8 @@
 
       &.is-open {
         display: block;
+        opacity: 1;
+        z-index: 2;
       }
     }
     &__nav-item:not(:first-child) {

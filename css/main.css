@@ -105,6 +105,8 @@ img {
   }
   .header__menu-container.is-open {
     display: block;
+    opacity: 1;
+    z-index: 2;
   }
   .header__nav-item:not(:first-child) {
     margin-top: 40px;
