@@ -515,7 +515,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .tasks-section .container {
-    padding-top: 94px;
     padding-bottom: 94px;
   }
   .tasks-section__title {
@@ -998,6 +997,7 @@ img {
 .container {
   padding: 0 15px;
   margin: 0 auto;
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
