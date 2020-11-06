@@ -400,6 +400,15 @@ img {
   }
 }
 
+.portfolio-main__gallery {
+  padding-bottom: 60px;
+}
+
+.portfolio-main__gallery-img {
+  display: block;
+  max-width: 100%;
+}
+
 .portfolio-main {
   background-color: #ffffff;
 }
