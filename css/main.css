@@ -73,13 +73,7 @@ img {
   .backdrop {
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .backdrop {
-    align-items: flex-start;
+    align-self: flex-start;
   }
 }
 
@@ -259,7 +253,7 @@ img {
   position: absolute;
   fill: #212121;
   left: 12px;
-  bottom: 14px;
+  bottom: 30px;
 }
 
 .form-input:focus + .modal-svg {
