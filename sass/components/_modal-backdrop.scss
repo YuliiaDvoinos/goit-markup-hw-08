@@ -36,3 +36,9 @@
     align-items: center;
   }
 }
+//desktop
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    align-items: flex-start;
+  }
+}

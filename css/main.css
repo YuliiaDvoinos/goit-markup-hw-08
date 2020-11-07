@@ -77,6 +77,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    align-items: flex-start;
+  }
+}
+
 .modal {
   max-width: 450px;
   padding: 40px;
